@@ -25,6 +25,7 @@ library(testcompendium)
 
 ## License
 
+| Artifact | License |
 |-----|-----|
 | data | [ODbL](http://opendatacommons.org/licenses/odbl/1.0/) license see LICENSE.md |
 | code | [MIT](https://opensource.org/licenses/MIT) see LICENSE.md |
