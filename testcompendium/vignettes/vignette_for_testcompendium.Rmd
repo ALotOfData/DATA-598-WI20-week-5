@@ -1,0 +1,63 @@
+---
+title: "testcompendium"
+author: "Ben Brodeur Mathieu"
+bibliography: "test.bib"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+
+vignette: >
+  %\VignetteIndexEntry{vignette_for_testcompendium}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(bookdown)
+library(datasets)
+library(tidyverse)
+library(testcompendium)
+```
+
+Here is an incredible package. It has a total of 1 function:
+
+## Using the package
+```{r}
+hello()
+```
+
+
+## Printing a table wow!
+
+```{r, figure-test, fig.cap="A wonderful graph!", fig.width=5}
+scatter <- ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) 
+scatter + geom_point(aes(color=Species, shape=Species)) +
+  xlab("Sepal Length") +  ylab("Sepal Width") +
+  ggtitle("Sepal Length-Width")
+```
+
+
+sometimes figures are interesting! \@ref(fig:figure-test) . With a fun reference [@Tuckman2020].
+
+## Importing code from an R file!
+
+Printed from imported r code:
+```{r}
+knitr::read_chunk(here::here("./vignettes/print.R"))
+```
+
+```{r, external}
+```
+
+
+
+## References
+
