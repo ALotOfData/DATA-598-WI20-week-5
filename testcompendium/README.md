@@ -29,7 +29,7 @@ library(testcompendium)
 |-----|-----|
 | data | [ODbL](http://opendatacommons.org/licenses/odbl/1.0/) license see LICENSE.md |
 | code | [MIT](https://opensource.org/licenses/MIT) see LICENSE.md |
-| document | [MIT}(https://opensource.org/licenses/MIT) see LICENSE.md  |
+| document | [MIT](https://opensource.org/licenses/MIT) see LICENSE.md  |
 
 
 Please note that the 'testcompendium' project is released with a
